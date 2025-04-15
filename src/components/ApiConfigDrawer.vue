@@ -72,6 +72,7 @@ const panelStore = useApiPanelStore()
 
 const form = reactive({
   apiUrl: '',
+  provider: 'mock',
   environment: '',
   apiKey: '',
   params: [] as { key: string; value: string }[],

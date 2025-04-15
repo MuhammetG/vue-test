@@ -36,11 +36,11 @@ const fetchData = async () => {
   portfolio.value = transformPortfolio(rawPortfolio)
 
   historyChartData.value = {
-    labels: rawHistory.map((h) => dayjs(h.date).format('MMM YY')),
+    labels: rawHistory.map((h: { date: string; value: number }) => dayjs(h.date).format('MMM YY')),
     datasets: [
       {
         label: 'Portföy Değeri',
-        data: rawHistory.map((h) => h.value),
+        data: (h: { date: string; value: number }) => h.value,
         fill: false,
         borderColor: '#52c41a',
         tension: 0.3,

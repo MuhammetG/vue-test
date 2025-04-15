@@ -77,7 +77,7 @@ const columns = [
     title: 'Takip',
     dataIndex: 'symbol',
     key: 'watch',
-    customRender: ({ text }) => {
+    customRender: ({ text }: { text: string }) => {
       return h(
         'span',
         {
@@ -94,7 +94,7 @@ const columns = [
     title: 'Alarm',
     dataIndex: 'symbol',
     key: 'alert',
-    customRender: ({ text }) => {
+    customRender: ({ text }: { text: string }) => {
       return h('a', { onClick: () => showAlertModal(text) }, 'Alarm Kur')
     },
   },
