@@ -1,45 +1,29 @@
-# vu3-api-dashboard
+# 💹 Vue 3 Varlık Takip Paneli
 
-This template should help get you started developing with Vue 3 in Vite.
+Bu proje, Vue 3 + Pinia + Ant Design Vue kullanılarak geliştirilmiş bir **Varlık (portföy) takip uygulamasıdır**.  
+API sağlayıcıları üzerinden piyasa verileri çekebilir, portföy değişimini izleyebilir ve işlem geçmişinizi takip edebilirsiniz.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Özellikler
 
-## Type Support for `.vue` Imports in TS
+- ⚙️ API sağlayıcı seçimi ve parametre yönetimi (mock, coingecko)
+- 📊 Canlı piyasa verileri ve grafikler
+- 💼 Portföy takibi ve değer değişim grafiği
+- 🧾 İşlem geçmişi görüntüleme + detay modalları
+- ⭐ Watchlist (takip edilen varlıklar)
+- 🔔 Fiyat alarmı kurulumu
+- 🔌 WebSocket simülasyonu ile canlı güncellemeler
+- 💾 API profilini dışa aktarma / içe aktarma
+- 🎯 Composition API, Pinia, Router, Scoped Styling kullanımı
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 📦 Kurulum
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+git clone git@github.com:MuhammetG/vue-test.git
+cd vue.test
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
